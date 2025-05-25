@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css.css">
+  <title>Portfolio</title>
+ 
+</head>
+<body>
+
+<header>
+    <img src="Bannière LinkedIn Architecte Moderne Blanc et Noir.png" alt="Bannière du site">
+</header>
+
+<nav>
+  <a href="#entreprise">Entreprise</a>
+  <a href="#formation">Ma formation</a>
+  <a href="#veille">Ma veille informatique</a>
+  <a href="#projets">Mes projets</a>
+  <a href="#E5 - E6">Feuilles E5 - E6</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<br>
+
+
+<section id="formation" class="box">
+  <h2 class="section-title">Présentation de l'entreprise</h2>
+  <div class="entreprise-content">
+    <img src="logo accesindustrie.webp" alt="Logo Accès Industrie" class="entreprise-logo">
+    <div class="entreprise-text">
+      <p><strong>Accès Industrie</strong> est une entreprise française, fondée en <strong>1997</strong> et basée à <strong>Tonneins</strong>, spécialisée dans la location et la vente de <strong>matériel d’élévation et de manutention</strong>.</p>
+      <p>Elle dispose d’un parc de plus de <strong>14 600</strong> machines et opère à travers un réseau de plus de <strong>45 agences</strong> en France, Belgique et Espagne. Avec un chiffre d’affaires de <strong>186 M€</strong> en 2021 et <strong>760 collaborateurs</strong>, Accès Industrie se positionne comme le <strong>troisième loueur français du secteur</strong>.</p>
+    </div>
+  </div>
+</section>
+
+
+<section id="formation" class="box">
+  <h2>Présentation de ma formation</h2>
+  <div class="entreprise-content">
+    <img src="campus.jpg" alt="Logo Accès Industrie" class="Ecole">
+    <div class="entreprise-text">
+    
+    <p>Le Campus Numérique 47 à Agen est un écosystème dédié à l'innovation numérique, regroupant formation, incubateur, coworking et cybersécurité au service du développement local.</p>
+    <p>On y retrouve le Campus Ermitage, qui propose plusieurs formations professionnelles en alternance, dont le BTS SIO avec les spécialités SISR et SLAM.</p>
+    <p>Le BTS SIO (Services Informatiques aux Organisations), spécialité <strong>SISR</strong> (Solutions d’Infrastructure, Systèmes et Réseaux), forme des techniciens capables de gérer, sécuriser et maintenir des infrastructures informatiques. Il prépare aux métiers liés à <strong>l’administration réseaux</strong>, <strong>la cybersécurité</strong> et le <strong>support technique</strong>.</p>
+    </div>
+  </div>
+</section>
+
+
+<link rel="stylesheet" href="carousel.css" />
+
+<section id="veille" class="box"> 
+  <h2>Ma veille informatique</h2>
+  <div class="carousel-container">
+    <button class="carousel-btn prev">&#10094;</button>
+    
+    <div class="carousel-track">
+      <div class="service-card windows-server">
+        <a href="https://www.it-connect.fr/patch-tuesday-mars-2025-microsoft-a-corrige-57-vulnerabilites-dont-7-failles-zero-day/" target="_blank">
+          <div class="service-content">
+            <h3>Windows Server</h3>
+            <p><em>En mars 2025</em>, Microsoft a publié un correctif pour une faille critique affectant Windows Server permettant l'exécution de code à distance.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="service-card aws">
+        <a href="https://aws.amazon.com/fr/blogs/aws/" target="_blank">
+          <div class="service-content">
+            <h3>Amazon Web Services</h3>
+            <p><em>En avril 2025</em>, AWS a lancé un nouveau service de <strong>cloud hybride</strong> visant à <strong>améliorer la latence</strong> des applications en zones rurales.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="service-card ubuntu">
+        <div class="service-content">
+          <h3>Ubuntu 24.10</h3>
+          <p><em>Octobre 2025</em>, Ubuntu 24.10 avec intégration locale de l’IA et des améliorations de sécurité.</p>
+        </div>
+      </div>
+
+      <!-- Nouvelles cartes -->
+      <div class="service-card windows10">
+        <a href="https://france.scc.com/scc-france/blog/actualite-software-mai-2025" target="_blank">
+          <div class="service-content">
+            <h3>Windows10, Support étendu</h3>
+            <p><em>Mai 2025</em>, Microsoft annonce l’extension du support de Windows 10 jusqu’en 2028 pour faciliter la transition vers Windows 11.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="service-card stabilityai">
+        <a href="https://www.usine-digitale.fr/article/stable-open-small-stability-ai-lance-un-modele-text-to-audio-capable-de-tourner-sur-smartphone.N2232088target="_blank">
+          <div class="service-content">
+            <h3>Stability AI - Audio IA</h3>
+            <p><em>Mai 2025</em>, Stability AI dévoile un modèle text-to-audio léger, capable de tourner localement sur smartphone.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="service-card wallonie">
+        <a href="https://fr.wikipedia.org/wiki/Cyberattaque_contre_le_Service_Public_de_Wallonie_(2025)" target="_blank">
+          <div class="service-content">
+            <h3>Cyberattaque - Wallonie</h3>
+            <p><em>Mai 2025</em>, une cyberattaque cible le Service Public de Wallonie. L’origine pourrait être liée à un acteur russe.</p>
+          </div>
+        </a>
+      </div>
+    </div>
+
+    <button class="carousel-btn next">&#10095;</button>
+  </div>
+</section>
+
+<script>
+  const track = document.querySelector('.carousel-track');
+  const prevBtn = document.querySelector('.carousel-btn.prev');
+  const nextBtn = document.querySelector('.carousel-btn.next');
+
+  let index = 0;
+  const cards = document.querySelectorAll('.service-card');
+  const cardWidth = cards[0].offsetWidth + 20;
+
+  nextBtn.addEventListener('click', () => {
+    if (index < cards.length - 1) {
+      index++;
+      track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+  });
+
+  prevBtn.addEventListener('click', () => {
+    if (index > 0) {
+      index--;
+      track.style.transform = `translateX(-${index * cardWidth}px)`;
+    }
+  });
+</script>
+
+
+
+<section id="projets" class="box">
+  <h2>Mes projets</h2>
+  <p>Liste de projets à venir...</p>
+</section>
+
+<section id="E5 - E6" class="box">
+  <h2>Feuilles E5 et E6</h2>
+  <div style="display: flex; gap: 20px;">
+    <embed src="E5.pdf" type="application/pdf">
+    <embed src="E6.pdf" type="application/pdf">
+  </div>
+</section>
+
+
+
+<link rel="stylesheet" href="contact.css" />
+
+<section id="contact" class="box">
+  <h2>Contact</h2>
+  <div class="contact-container">
+    <form>
+      <input type="text" placeholder="Nom">
+      <input type="text" placeholder="Prénom">
+      <input type="email" placeholder="Adresse mail">
+      <textarea placeholder="Message ...."></textarea>
+      <button type="submit">Envoyer</button>
+    </form>
+    <div class="linkedin">
+      <a href="https://www.linkedin.com/in/karla-flan-5775132b3/" target="_blank" ><img src="phonelinkedin.png" alt="linkedin"></a>
+
+    </div>
+  </div>
+</section>
+
+<footer>
+  &copy; 2025 Karla Flan - Portfolio
+</footer>
+
+</body>
+</html>

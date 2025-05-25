@@ -1,0 +1,57 @@
+
+/* Conteneur du formulaire et du lien LinkedIn */
+.contact-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+/* Formulaire */
+form {
+  flex: 1 1 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+/* Champs de texte et zone de message */
+input,
+textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  text-align: flex; /* Aligne le texte saisi à droite */
+}
+
+/* Placeholder aligné à droite */
+input::placeholder,
+textarea::placeholder {
+  text-align: flex;
+}
+
+/* Bouton d'envoi */
+button {
+  padding: 10px;
+  font-size: 16px;
+  background-color: #0077b5;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  align-self: flex-end;
+}
+
+/* Lien LinkedIn */
+.linkedin {
+  flex: 1 1 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.linkedin img {
+  max-width: 200px;
+  height: auto;
+}
