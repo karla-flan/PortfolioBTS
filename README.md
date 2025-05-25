@@ -7,8 +7,8 @@ Ce projet a pour but de présenter mes compétences, projets, et réalisations �
 ## 🗂️ Contenu
 
 - 📁 Projets réalisés en cours et en stage
-- 🛠️ Compétences techniques (HTML, CSS, JS, Python, SQL, etc.)
-- 📄 CV et rapport de stage
+- 🛠️ Compétences techniques (HTML, CSS, Python, SQL, etc.)
+- 📄 Rapport d'alternances et projets
 - 🌐 Liens vers mes profils GitHub et LinkedIn
 
 ## 🚀 Objectif
@@ -17,7 +17,7 @@ Mettre en avant mon parcours et mon évolution dans le domaine du développement
 
 ## 📬 Me contacter
 
-- ✉️ Email : karla@example.com  
+- ✉️ Email : karla47.flan@gmail.com 
 - 💼 LinkedIn : [Mon profil](https://www.linkedin.com/in/karla-flan-5775132b3/)  
 - 🐙 GitHub : [@karla-flan](https://github.com/karla-flan)
 
