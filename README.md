@@ -18,7 +18,7 @@ Mettre en avant mon parcours et mon évolution dans le domaine du développement
 ## 📬 Me contacter
 
 - ✉️ Email : karla@example.com  
-- 💼 LinkedIn : [Mon profil](https://www.linkedin.com/in/karla-flan)  
+- 💼 LinkedIn : [Mon profil](https://www.linkedin.com/in/karla-flan-5775132b3/)  
 - 🐙 GitHub : [@karla-flan](https://github.com/karla-flan)
 
 ---
